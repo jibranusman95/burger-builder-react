@@ -50,11 +50,11 @@ class BurgerBuilder extends Component {
 	}
 
 	purchaseHandler = () => {
-		this.setState({ purchasing: true })
+		this.setState({ purchasing: true });
 	}
 
 	purchaseCancelledHandler = () => {
-		this.setState({ purchasing: false })
+		this.setState({ purchasing: false });
 	}
 
 	purchaseContinueHandler = () => {
@@ -69,7 +69,7 @@ class BurgerBuilder extends Component {
 			.reduce((sum, el) => {
 				return sum + el;
 			}, 0);
-		this.setState({ purchaseable: sum > 0 })
+		this.setState({ purchaseable: sum > 0 });
 	}
 
 	render(){
